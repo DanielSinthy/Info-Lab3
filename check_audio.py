@@ -17,3 +17,8 @@ def analyze_audio(file_path):
     # Display tempo
     tempo_label.config(text="Tempo: {:.2f} BPM".format(tempo))
 
+def select_file():
+    file_path = filedialog.askopenfilename()
+    analyze_audio(file_path)
+   
+
