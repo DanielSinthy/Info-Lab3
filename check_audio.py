@@ -20,5 +20,9 @@ def analyze_audio(file_path):
 def select_file():
     file_path = filedialog.askopenfilename()
     analyze_audio(file_path)
-   
 
+select_button = tk.Button(root, text="Select File", command=select_file)
+select_button.pack()
+
+   
+root.mainloop()
